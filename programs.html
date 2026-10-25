@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Programs & Syllabi — Junaid Academy</title>
+<meta name="description" content="Unit-by-unit syllabi for Junaid Academy's four tracks: robotics, coding, AI foundations, and competition prep. Ten-week units, each ending in a demo day.">
+<link rel="canonical" href="https://junaid.academy/programs.html">
+<meta property="og:title" content="Programs & Syllabi — Junaid Academy">
+<meta property="og:description" content="Unit-by-unit syllabi for robotics, coding, AI foundations, and competition prep.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://junaid.academy/programs.html">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B1F33'/%3E%3Ccircle cx='10' cy='22' r='3.4' fill='none' stroke='%2333D6C8' stroke-width='2.2'/%3E%3Ccircle cx='22' cy='10' r='3.4' fill='none' stroke='%23FFB02E' stroke-width='2.2'/%3E%3Cpath d='M12.5 19.5l7-7' stroke='%23EAF2FA' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --midnight:#0B1F33; --slate:#15314B; --paper:#F3F6F9; --white:#FFFFFF;
+  --circuit:#33D6C8; --amber:#FFB02E; --ink:#132536; --mist:#C7D4E0;
+  --grot:"Hanken Grotesk",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--paper);color:var(--ink);font-family:var(--grot);font-size:17px;line-height:1.6}
+a{color:#0d5c54}
+a:focus-visible,button:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+header.site{background:var(--midnight);color:var(--white)}
+.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-top:16px;padding-bottom:16px;flex-wrap:wrap;max-width:1120px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--white)}
+.brand b{font-weight:800;font-size:1.22rem}
+.brand small{display:block;font-family:var(--mono);font-size:.68rem;color:var(--circuit)}
+nav.main a{color:var(--mist);text-decoration:none;font-size:.94rem;font-weight:600;padding:7px 11px;border-radius:5px}
+nav.main a:hover{color:var(--white);background:var(--slate)}
+nav.main a.cta{background:var(--circuit);color:var(--midnight)}
+.pagehead{background:var(--midnight);color:var(--white);padding:52px 0 56px}
+.pagehead h1{font-weight:800;font-size:clamp(2rem,4.5vw,3rem);letter-spacing:-.015em;line-height:1.1}
+.pagehead p{margin-top:14px;max-width:62ch;color:var(--mist)}
+.pagehead .toc{margin-top:24px;display:flex;gap:10px;flex-wrap:wrap}
+.pagehead .toc a{font-family:var(--mono);font-size:.82rem;color:var(--circuit);text-decoration:none;border:1px solid #3a6188;border-radius:5px;padding:6px 12px}
+.pagehead .toc a:hover{border-color:var(--circuit)}
+section.tracksyl{padding:58px 0;border-bottom:1px solid var(--mist)}
+section.tracksyl:last-of-type{border-bottom:0}
+.tracksyl .head{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:8px}
+.tracksyl h2{font-weight:800;font-size:clamp(1.5rem,3vw,2.1rem);letter-spacing:-.01em}
+.tracksyl .ages{font-family:var(--mono);font-size:.8rem;background:var(--white);border:1px solid var(--mist);border-radius:4px;padding:3px 10px;color:#3c5165}
+.tracksyl>.wrap>p{max-width:66ch;color:#3c5165;margin-bottom:26px}
+.unit{background:var(--white);border:1.5px solid var(--midnight);border-radius:8px;margin-bottom:18px;overflow:hidden}
+.unit>summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;gap:14px;padding:16px 20px;flex-wrap:wrap}
+.unit>summary::-webkit-details-marker{display:none}
+.unit>summary .uno{font-family:var(--mono);font-size:.78rem;color:#0d5c54;white-space:nowrap}
+.unit>summary b{font-size:1.05rem;font-weight:800}
+.unit>summary .dur{margin-left:auto;font-family:var(--mono);font-size:.76rem;color:#6b7f93}
+.unit[open]>summary{border-bottom:1.5px solid var(--mist)}
+.unit .body{padding:18px 20px 22px;display:grid;grid-template-columns:1.3fr .7fr;gap:28px}
+.unit .weeks{margin:0;padding-left:0;list-style:none;font-size:.94rem}
+.unit .weeks li{padding:7px 0;border-bottom:1px dashed var(--mist);display:flex;gap:12px}
+.unit .weeks li:last-child{border-bottom:0}
+.unit .weeks .wk{font-family:var(--mono);font-size:.74rem;color:#6b7f93;min-width:58px;padding-top:3px}
+.unit aside{font-size:.9rem;background:var(--paper);border-radius:6px;padding:14px 16px}
+.unit aside h4{font-family:var(--mono);font-weight:500;font-size:.74rem;color:#0d5c54;margin-bottom:8px}
+.unit aside ul{margin:0;padding-left:18px}
+.unit aside li{padding:2px 0}
+.backbar{padding:40px 0 64px;text-align:center}
+.btn{display:inline-block;padding:13px 24px;border-radius:6px;text-decoration:none;font-weight:700;background:var(--midnight);color:var(--white)}
+.btn:hover{background:var(--slate)}
+footer.site{background:var(--midnight);color:#8FA6BB;padding:28px 0;font-size:.86rem}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;max-width:1120px}
+footer a{color:var(--mist)}
+@media (max-width:760px){.unit .body{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <svg width="38" height="38" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#15314B"/><circle cx="10" cy="22" r="3.4" fill="none" stroke="#33D6C8" stroke-width="2.2"/><circle cx="22" cy="10" r="3.4" fill="none" stroke="#FFB02E" stroke-width="2.2"/><path d="M12.5 19.5l7-7" stroke="#EAF2FA" stroke-width="2.2" stroke-linecap="round"/></svg>
+      <span><b>Junaid Academy</b><small>robotics, code &amp; ai</small></span>
+    </a>
+    <nav class="main" aria-label="Main">
+      <a href="/#tracks">Tracks</a>
+      <a href="/#scholarships">Scholarships</a>
+      <a href="/#faq">Parents' FAQ</a>
+      <a class="cta" href="/#waitlist">Join the waitlist</a>
+    </nav>
+  </div>
+</header>
+
+<div class="pagehead">
+  <div class="wrap">
+    <h1>Programs and syllabi</h1>
+    <p>Every track is built from 10-week units. Each unit below lists what students build week by week, plus the skills and tools involved. These syllabi are the plan for our founding cohorts; we'll refine them with our first instructors before classes begin.</p>
+    <nav class="toc" aria-label="Tracks on this page">
+      <a href="#robotics">robotics</a>
+      <a href="#coding">coding</a>
+      <a href="#ai">ai foundations</a>
+      <a href="#competition">competition prep</a>
+    </nav>
+  </div>
+</div>
+
+<main>
+<section class="tracksyl" id="robotics">
+  <div class="wrap">
+    <div class="head"><h2>Robotics</h2><span class="ages">ages 8–16 — 4 units</span></div>
+    <p>The robotics track takes a student from "what makes it move" to a robot that completes a task with no one touching the controller. Students work in pairs on shared kits; every unit ends in a demo day.</p>
+
+    <details class="unit" open>
+      <summary><span class="uno">R1</span><b>Machines that move</b><span class="dur">10 weeks — ages 8–11</span></summary>
+      <div class="body">
+        <ul class="weeks">
+          <li><span class="wk">wk 1–2</span><span>Levers, wheels, and gears: build three machines that trade speed for strength.</span></li>
+          <li><span class="wk">wk 3–4</span><span>First motor: wire it, reverse it, control its speed.</span></li>
+          <li><span class="wk">wk 5–6</span><span>Chassis design: build a drivebase that survives the ramp test.</span></li>
+          <li><span class="wk">wk 7–8</span><span>Remote driving challenges: precision, not speed.</span></li>
+          <li><span class="wk">wk 9–10</span><span>Demo build: a machine that solves one household-scale problem.</span></li>
+        </ul>
+        <aside>
+          <h4>// skills & tools</h4>
+          <ul><li>Gear ratios by feel</li><li>Safe wiring habits</li><li>Structural testing</li><li>Explaining a design choice out loud</li></ul>
+        </aside>
+      </div>
+    </details>
+
+    <details class="unit">
+      <summary><span class="uno">R2</span><b>Sensing the world</b><span class="dur">10 weeks — ages 10–13</span></summary>
+      <div class="body">
+        <ul class="weeks">
+          <li><span class="wk">wk 1–2</span><span>What a sensor really returns: numbers, noise, and why readings jitter.</span></li>
+          <li><span class="wk">wk 3–4</span><span>Touch and light sensors: a robot that stops at an edge.</span></li>
+          <li><span class="wk">wk 5–6</span><span>Ultrasonic distance: follow a wall without touching it.</span></li>
+          <li><span class="wk">wk 7–8</span><span>Line following — the classic, done properly with thresholds.</span></li>
+          <li><span class="wk">wk 9–10</span><span>Demo: navigate a course blind, sensors only.</span></li>
+        </ul>
+        <aside>
+          <h4>// skills & tools</h4>
+          <ul><li>Reading sensor data</li><li>Calibration routines</li><li>If/else control logic</li><li>Debugging with print statements</li></ul>
+        </aside>
+      </div>
+    </details>
+
+    <details class="unit">
+      <summary><span class="uno">R3</span><b>Closed-loop control</b><span class="dur">10 weeks — ages 12–16</span></summary>
+      <div class="body">
+        <ul class="weeks">
+          <li><span class="wk">wk 1–2</span><span>Open vs closed loop: why "drive 2 seconds" drifts and "drive 50 cm" doesn't.</span></li>
+          <li><span class="wk">wk 3–5</span><span>Proportional control: smooth line following, straight driving with gyro correction.</span></li>
+          <li><span class="wk">wk 6–7</span><span>Tuning: what P, I, and D each fix, discovered by breaking things.</span></li>
+          <li><span class="wk">wk 8–10</span><span>Demo: a robot that parks itself in a marked bay, repeatably.</span></li>
+        </ul>
+        <aside>
+          <h4>// skills & tools</h4>
+          <ul><li>Feedback loops</li><li>PID intuition</li><li>Test protocols & logging</li><li>Python on the robot</li></ul>
+        </aside>
+      </div>
+    </details>
+
+    <details class="unit">
+      <summary><span class="uno">R4</span><b>Capstone: the autonomous task robot</b><span class="dur">10 weeks — ages 13–16</span></summary>
+      <div class="body">
+        <ul class="weeks">
+          <li><span class="wk">wk 1–2</span><span>Pick a task, write the spec, defend it to the cohort.</span></li>
+          <li><span class="wk">wk 3–7</span><span>Build–test–rebuild cycles with weekly milestones and an engineering notebook.</span></li>
+          <li><span class="wk">wk 8–9</span><span>Reliability week: the robot must succeed three runs out of five.</span></li>
+          <li><span class="wk">wk 10</span><span>Demo day for parents: live run plus a short technical talk.</span></li>
+        </ul>
+        <aside>
+          <h4>// skills & tools</h4>
+          <ul><li>Scoping a project</li><li>Milestone planning</li><li>Failure analysis</li><li>Presenting technical work</li></ul>
+        </aside>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section class="tracksyl" id="coding">
+  <div class="wrap">
+    <div class="head"><h2>Coding</h2><span class="ages">ages 8–17 — 4 units</span></div>
+    <p>The coding track builds fluency: reading code, writing it, and — most neglected in kids' programs — fixing it when it breaks. Younger students start with blocks; the track lands in real Python projects with version control.</p>
+
+    <details class="unit" open>
+      <summary><span class="uno">C1</span><b>Logic before language</b><span class="dur">10 weeks — ages 8–10</span></summary>
+      <div class="body">
+        <ul class="weeks">
+          <li><span class="wk">wk 1–2</span><span>Sequences and bugs: program a classmate to make a sandwich, watch it fail.</span></li>
+          <li><span class="wk">wk 3–5</span><span>Loops and events in block code: animations and a simple game.</span></li>
+          <li><span class="wk">wk 6–8</span><span>Conditionals and variables: a quiz game that keeps score.</span></li>
+          <li><span class="wk">wk 9–10</span><span>Demo: each pair ships a playable game to the cohort arcade.</span></li>
+        </ul>
+        <aside>
+          <h4>// skills & tools</h4>
+          <ul><li>Decomposition</li><li>Loops, events, variables</li><li>Block-based environment</li><li>Testing each other's games</li></ul>
+        </aside>
+      </div>
+    </details>
+
+    <details class="unit">
+      <summary><span class="uno">C2</span><b>Python, from zero</b><span class="dur">10 weeks — ages 10–14</span></summary>
+      <div class="body">
+        <ul class="weeks">
+          <li><span class="wk">wk 1–2</span><span>From blocks to text: same logic, new spelling. First scripts.</span></li>
+          <li><span class="wk">wk 3–5</span><span>Functions, lists, and loops — drilling until they're boring.</span></li>
+          <li><span class="wk">wk 6–8</span><span>A text adventure engine, built up feature by feature.</span></li>
+          <li><span class="wk">wk 9–10</span><span>Demo: cohort plays each other's adventures and files bug reports.</span></li>
+        </ul>
+        <aside>
+          <h4>// skills & tools</h4>
+          <ul><li>Python core syntax</li><li>Functions & structure</li><li>Reading error messages</li><li>Writing a bug report</li></ul>
+        </aside>
+      </div>
+    </details>
+
+    <details class="unit">
+      <summary><span class="uno">C3</span><b>Data, files, and small tools</b><span class="dur">10 weeks — ages 12–16</span></summary>
+      <div class="body">
+        <ul class="weeks">
+          <li><span class="wk">wk 1–2</span><span>Reading and writing files; a program that survives being closed.</span></li>
+          <li><span class="wk">wk 3–5</span><span>Working with real datasets: clean it, count it, chart it.</span></li>
+          <li><span class="wk">wk 6–8</span><span>Build a small tool someone else would actually use.</span></li>
+          <li><span class="wk">wk 9–10</span><span>Demo: hand your tool to another pair and watch them use it cold.</span></li>
+        </ul>
+        <aside>
+          <h4>// skills & tools</h4>
+          <ul><li>File I/O, CSV data</li><li>Simple charting</li><li>User thinking</li><li>Documentation basics</li></ul>
+        </aside>
+      </div>
+    </details>
+
+    <details class="unit">
+      <summary><span class="uno">C4</span><b>Capstone: ship it</b><span class="dur">10 weeks — ages 13–17</span></summary>
+      <div class="body">
+        <ul class="weeks">
+          <li><span class="wk">wk 1–2</span><span>Project pitch and scope cut — half of every first idea gets removed.</span></li>
+          <li><span class="wk">wk 3–4</span><span>Version control: commits, branches, and why professionals bother.</span></li>
+          <li><span class="wk">wk 5–8</span><span>Build sprints with weekly code review from instructors.</span></li>
+          <li><span class="wk">wk 9–10</span><span>Publish the project with a readme and present it on demo day.</span></li>
+        </ul>
+        <aside>
+          <h4>// skills & tools</h4>
+          <ul><li>Git fundamentals</li><li>Code review etiquette</li><li>Scoping & shipping</li><li>A real portfolio piece</li></ul>
+        </aside>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section class="tracksyl" id="ai">
+  <div class="wrap">
+    <div class="head"><h2>AI foundations</h2><span class="ages">ages 12–17 — 3 units</span></div>
+    <p>Not "prompt tricks." Students train, test, and break small models so they understand what machine learning is — and build the judgment to question what it tells them. Requires Python (C2) or equivalent.</p>
+
+    <details class="unit" open>
+      <summary><span class="uno">A1</span><b>How a model learns</b><span class="dur">10 weeks</span></summary>
+      <div class="body">
+        <ul class="weeks">
+          <li><span class="wk">wk 1–2</span><span>Prediction by hand: guess, measure error, adjust, repeat. That's the whole trick.</span></li>
+          <li><span class="wk">wk 3–5</span><span>Features and labels: build a dataset about something you care about.</span></li>
+          <li><span class="wk">wk 6–8</span><span>Train a first classifier; chart how more data changes accuracy.</span></li>
+          <li><span class="wk">wk 9–10</span><span>Demo: explain your model's best and worst predictions to the room.</span></li>
+        </ul>
+        <aside>
+          <h4>// skills & tools</h4>
+          <ul><li>Training vs test data</li><li>Error and accuracy</li><li>Dataset design</li><li>Healthy skepticism</li></ul>
+        </aside>
+      </div>
+    </details>
+
+    <details class="unit">
+      <summary><span class="uno">A2</span><b>Break it on purpose</b><span class="dur">10 weeks</span></summary>
+      <div class="body">
+        <ul class="weeks">
+          <li><span class="wk">wk 1–3</span><span>Image classifiers: train one, then hunt for inputs that fool it.</span></li>
+          <li><span class="wk">wk 4–6</span><span>Bias in, bias out: skew your training data and measure what happens.</span></li>
+          <li><span class="wk">wk 7–8</span><span>Where AI shouldn't decide alone: cases, debated properly.</span></li>
+          <li><span class="wk">wk 9–10</span><span>Demo: present your model's failure catalog — the honest spec sheet.</span></li>
+        </ul>
+        <aside>
+          <h4>// skills & tools</h4>
+          <ul><li>Adversarial thinking</li><li>Dataset bias</li><li>AI ethics, concretely</li><li>Writing a model card</li></ul>
+        </aside>
+      </div>
+    </details>
+
+    <details class="unit">
+      <summary><span class="uno">A3</span><b>AI on robots</b><span class="dur">10 weeks</span></summary>
+      <div class="body">
+        <ul class="weeks">
+          <li><span class="wk">wk 1–3</span><span>Camera on the robot: detect a colored target, then an object class.</span></li>
+          <li><span class="wk">wk 4–6</span><span>Perception to action: drive toward what the model sees.</span></li>
+          <li><span class="wk">wk 7–8</span><span>Confidence thresholds: teach the robot to say "not sure" and stop.</span></li>
+          <li><span class="wk">wk 9–10</span><span>Demo: a sorting robot that explains each decision on screen.</span></li>
+        </ul>
+        <aside>
+          <h4>// skills & tools</h4>
+          <ul><li>Computer vision basics</li><li>Model-driven control</li><li>Confidence & safety stops</li><li>Full-stack robotics</li></ul>
+        </aside>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section class="tracksyl" id="competition">
+  <div class="wrap">
+    <div class="head"><h2>Competition prep</h2><span class="ages">ages 14–17 — season-based</span></div>
+    <p>A team program shaped around a competition season rather than fixed units. Our goal is to field Junaid Academy teams in established robotics leagues and coding contests in our first full year. Entry is by instructor conversation, not test scores — commitment matters more than current skill.</p>
+
+    <details class="unit" open>
+      <summary><span class="uno">P1</span><b>Pre-season: read the game like an engineer</b><span class="dur">6 weeks</span></summary>
+      <div class="body">
+        <ul class="weeks">
+          <li><span class="wk">wk 1–2</span><span>Dissect a past season's game manual; score strategies on paper first.</span></li>
+          <li><span class="wk">wk 3–4</span><span>Team roles: drive, build, code, scout, notebook — everyone learns two.</span></li>
+          <li><span class="wk">wk 5–6</span><span>Mock kickoff: 72-hour design sprint on a practice challenge.</span></li>
+        </ul>
+        <aside>
+          <h4>// skills & tools</h4>
+          <ul><li>Strategy before build</li><li>Role rotation</li><li>Decision matrices</li></ul>
+        </aside>
+      </div>
+    </details>
+
+    <details class="unit">
+      <summary><span class="uno">P2</span><b>Season: design–build–test on a clock</b><span class="dur">league calendar</span></summary>
+      <div class="body">
+        <ul class="weeks">
+          <li><span class="wk">cycle</span><span>Weekly iteration loops: one measurable improvement per session, logged.</span></li>
+          <li><span class="wk">cycle</span><span>Engineering notebook kept to judged standard from day one.</span></li>
+          <li><span class="wk">cycle</span><span>Scrimmages against the clock, with post-match debriefs.</span></li>
+          <li><span class="wk">cycle</span><span>Judged-presentation practice: every member can explain every subsystem.</span></li>
+        </ul>
+        <aside>
+          <h4>// skills & tools</h4>
+          <ul><li>Iteration under deadline</li><li>Notebook discipline</li><li>Match strategy</li><li>Graceful losing, useful winning</li></ul>
+        </aside>
+      </div>
+    </details>
+  </div>
+</section>
+
+<div class="backbar">
+  <a class="btn" href="/#waitlist">Join the founding cohort waitlist</a>
+</div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 Junaid Academy. All rights reserved. <a href="/privacy.html">Privacy</a> — <a href="/terms.html">Terms</a></span>
+    <span>Syllabi describe planned programs and may be refined before classes begin.</span>
+  </div>
+</footer>
+</body>
+</html>

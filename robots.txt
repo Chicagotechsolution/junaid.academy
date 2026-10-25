@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://junaid.academy/sitemap.xml
